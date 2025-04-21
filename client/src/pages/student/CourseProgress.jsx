@@ -104,7 +104,7 @@ const CourseProgress = () => {
                     <div className='flex-1 overflow-y-auto'>
                         {
                             courseDetails?.lectures.map((lecture) => (
-                                <Card key={lecture._id} onClick={() => handleSelectLecture(lecture)} className={`mb-3 hover:cursor-pointer transition transform ${lecture._id === currentLecture?._id ? "bg-gray-300" : "dark:bg-gray-800"}`}>
+                                <Card key={lecture._id} onClick={() => handleSelectLecture(lecture)} className={`mb-3 hover:cursor-pointer transition transform ${lecture._id === currentLecture?._id ? "bg-gray-300 dark:bg-gray-800" : ""}`}>
                                     <CardContent className="flex items-center justify-between p-3">
                                         <div className='flex items-center'>
                                             {

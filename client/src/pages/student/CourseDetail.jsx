@@ -30,7 +30,7 @@ const CourseDetail = () => {
             <div className='bg-[#2d2f31] text-white'>
                 <div className='max-w-7xl mx-auto py-7 px-4 md:px-8 flex flex-col gap-2'>
                     <h1 className='text-2xl font-bold md:text-3xl'>{course?.courseTitle}</h1>
-                    <p className='text-base md:text-lg'>Course Sub-title</p>
+                    <p className='text-base md:text-lg'>{course?.subTitle}</p>
                     <p>Created By{" "} <span className='text-[#C0C4FC] italic underline'>{course?.creator.name}</span></p>
                     <div className='flex items-center gap-2 text-sm'>
                         <BadgeInfo size={16} />
@@ -49,7 +49,7 @@ const CourseDetail = () => {
                     <Card>
                         <CardHeader>
                             <CardTitle>Course Content</CardTitle>
-                            <CardDescription>4 Lectures</CardDescription>
+                            <CardDescription>5 Lectures:</CardDescription>
                         </CardHeader>
                         <CardContent className="space-y-3">
                             {
@@ -82,7 +82,7 @@ const CourseDetail = () => {
                             </div>
                             <h1>Lecture title</h1>
                             <Separator className="my-2" />
-                            <h1 className='text-lg md:text-xl font-semibold'>Course Price</h1>
+                            <h1 className='text-lg md:text-xl font-semibold'>₹{course?.coursePrice}</h1>
                         </CardContent>
                         <CardFooter className="flex justify-center p-2">
                             {
