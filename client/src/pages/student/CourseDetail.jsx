@@ -80,7 +80,7 @@ const CourseDetail = () => {
                                     controls={true}
                                 />
                             </div>
-                            <h1>Lecture title</h1>
+                            <h1>Lecture: Introduction</h1>
                             <Separator className="my-2" />
                             <h1 className='text-lg md:text-xl font-semibold'>₹{course?.coursePrice}</h1>
                         </CardContent>
