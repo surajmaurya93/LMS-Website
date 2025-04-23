@@ -24,7 +24,7 @@ const Profile = () => {
     const { data, isLoading, refetch } = useLoadUserQuery();
     const [updateUser, { data: updateUserData, isLoading: updateUserIsLoading, isError, error, isSuccess }] = useUpdateUserMutation();
 
-    console.log(data);
+    // console.log(data);
 
 
     const onChangeHandler = (e) => {
@@ -59,7 +59,7 @@ const Profile = () => {
     if (isLoading) return <h1>Profile Loading....</h1>;
 
     const user = data && data.user;
-    console.log(user);
+    // console.log(user);
 
     return (
         <div className="max-w-4xl mx-auto px-4 my-5">

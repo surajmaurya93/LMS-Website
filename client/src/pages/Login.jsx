@@ -91,7 +91,7 @@ const Login = () => {
     ]);
 
     return (
-        <div className="flex items-center justify-center w-full mt-20">
+        <div className="flex items-center justify-center w-full mt-14">
             <Tabs defaultValue="login" className="w-[400px]">
                 <TabsList className="grid w-full grid-cols-2">
                     <TabsTrigger value="signup">Signup</TabsTrigger>
@@ -100,12 +100,12 @@ const Login = () => {
                 <TabsContent value="signup">
                     <Card>
                         <CardHeader>
-                            <CardTitle>Signup</CardTitle>
+                            <CardTitle className="text-2xl font-medium">Signup</CardTitle>
                             <CardDescription>
                                 Create a new account and click signup when you're done.
                             </CardDescription>
                         </CardHeader>
-                        <CardContent className="space-y-2">
+                        <CardContent className="space-y-5">
                             <div className="space-y-1">
                                 <Label htmlFor="name">Name</Label>
                                 <Input
@@ -153,12 +153,12 @@ const Login = () => {
                 <TabsContent value="login">
                     <Card>
                         <CardHeader>
-                            <CardTitle>Login</CardTitle>
+                            <CardTitle className="text-2xl font-medium">Login</CardTitle>
                             <CardDescription>
                                 Login your password here. After signup, you'll be logged in.
                             </CardDescription>
                         </CardHeader>
-                        <CardContent className="space-y-2">
+                        <CardContent className="space-y-5">
                             <div className="space-y-1">
                                 <Label htmlFor="current">Email</Label>
                                 <Input

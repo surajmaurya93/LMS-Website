@@ -41,7 +41,7 @@ const NavBar = () => {
         await logoutUser();
     }
 
-    console.log(user)
+    // console.log(user)
 
     useEffect(() => {
         if (isSuccess) {
@@ -56,8 +56,8 @@ const NavBar = () => {
             {/* Desktop Screen*/}
             <div className='max-w-6xl mx-auto hidden justify-between items-center gap-10 h-full md:flex'>
                 <div className='flex items-center gap-2'>
-                    <School size={"30"} />
-                    <Link to="/"><h1 className='hidden md:block font-extrabold text-2xl'>Edu. Learning</h1></Link>
+                    <School size={"27"} />
+                    <Link to="/"><h1 className='hidden md:block font-extrabold text-2xl'>Ede-<span className='text-blue-700'>Techy</span></h1></Link>
                 </div>
                 {/* User Icons And Dark Mode Icons */}
                 <div className='flex items-center gap-6'>
